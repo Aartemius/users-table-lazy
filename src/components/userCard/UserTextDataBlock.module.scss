@@ -1,0 +1,20 @@
+@import '../../styles/global';
+
+.userTextDataBlock {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  @include maxw($mob-breakpoint) {
+    margin: 1rem 0 0;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $border-grey;
+  order: 2;
+  @include minw($mob-breakpoint) {
+    display: none;
+  }
+}

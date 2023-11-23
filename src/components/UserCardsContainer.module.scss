@@ -1,0 +1,9 @@
+@import '../styles/global';
+
+.cardsContainer {
+  width: 77%;
+  margin: 0 auto;
+  @include maxw($mob-breakpoint) {
+    width: 90%;
+  }
+}
