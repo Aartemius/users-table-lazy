@@ -22,7 +22,7 @@ const UserTextDataBlock: FC<UserTextDataBlockProps> = ({
   return (
     <>
       <div
-        style={style}
+        style={ style }
         className={ styles.userTextDataBlock }
       >
         <TitleText

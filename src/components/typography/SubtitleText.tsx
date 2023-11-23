@@ -5,6 +5,6 @@ interface SubtitleTextProps {
   textValue: string;
 }
 
-const SubtitleText: FC<SubtitleTextProps> = ({textValue}) => (<p className={ styles.subtitleText }>{textValue}</p>);
+const SubtitleText: FC<SubtitleTextProps> = ({ textValue }) => (<p className={ styles.subtitleText }>{textValue}</p>);
 
 export default SubtitleText;

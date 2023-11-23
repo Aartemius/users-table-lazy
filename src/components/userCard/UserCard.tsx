@@ -16,8 +16,8 @@ const UserCard: FC<UserCardProps> = ({ user, isMobile }) => {
   return (
     <div className={ styles.userCard }>
       <Avatar
-        image={user.picture}
-        name={user.name}
+        image={ user.picture }
+        name={ user.name }
       />
       { // @ts-ignore
         blocks.map((block, index) => renderUserDataBlock(block, index)) 

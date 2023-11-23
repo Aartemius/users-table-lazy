@@ -10,13 +10,13 @@ interface AvatarProps {
 
 const Avatar: FC<AvatarProps> = ({ image, name }) => {
   const { isMobile } = useViewport();
-  const pictureUrl = isMobile ? image.thumbnail : image.large;
+  const pictureUrl = isMobile ? image.thumbnail : image.medium;
 
   return (
     <div className={ styles.avatarWrap }>
       <img
         src={ pictureUrl }
-        alt={ name.first }
+        alt={ `${ name.first } ${ name.last }` }
       />
     </div>
   );

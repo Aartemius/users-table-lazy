@@ -6,11 +6,11 @@ interface TitleTextProps {
   fontWeight?: number;
 }
 
-const TitleText: FC<TitleTextProps> = ({textValue, fontWeight}) => (
+const TitleText: FC<TitleTextProps> = ({ textValue, fontWeight }) => (
   <p
     className={ styles.titleText }
     style={{ fontWeight: fontWeight ?? 500 }}
-  >{textValue}</p>
+  >{ textValue }</p>
 );
 
 export default TitleText;

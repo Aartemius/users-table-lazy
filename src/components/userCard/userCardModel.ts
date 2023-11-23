@@ -9,7 +9,8 @@ export const textDataBlocks = (user: User, isMobile: boolean) => [
     style: { 
       width: isMobile ? "calc(100% - 2.5rem)" : "23%", 
       order: isMobile ? 1 : undefined,
-      marginBottom: isMobile ? '1rem' : undefined
+      marginBottom: isMobile ? '1rem' : undefined,
+      wordBreak: 'break-all'
     },
     withBottomDivider: true
   }, {

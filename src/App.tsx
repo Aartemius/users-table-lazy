@@ -4,7 +4,7 @@ import UserCardsContainer from './components/UserCardsContainer';
 function App() {
 
   return (
-    <section className={ styles.app }>
+    <section className={ styles.app } data-testid="app">
       <UserCardsContainer />
     </section>
   );

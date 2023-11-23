@@ -37,15 +37,16 @@ const UserCardsContainer = () => {
 
   return (
     <>
-      {data && (
-        <div className={styles.cardsContainer}>
-          {data.results.map((user: User, index: number) => (
-            <UserCard user={user} key={index} isMobile={isMobile} />
-          ))}
+      { data && (
+        <div className={ styles.cardsContainer }>
+          { data.results.map((user: User, index: number) => (
+            <UserCard user={ user } key={ index } isMobile={ isMobile } />
+          )) }
         </div>
       )}
-      {isLoading && <Loader />}
-      {error && <div>{error.message}</div>}
+      { !data && isLoading && <div style={{ height: '30vh' }}></div> }
+      { isLoading && <Loader /> }
+      { error && <div>{error.message}</div> }
     </>
   );
 };

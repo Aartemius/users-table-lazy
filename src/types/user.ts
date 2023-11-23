@@ -1,11 +1,9 @@
 export interface UserName {
   first: string;
   last: string;
-  title: string;
 }
 
 export interface UserImage {
-  large: string;
   medium: string;
   thumbnail: string;
 }
