@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Avatar from '../Avatar';
 
 const mockImage = {
-  medium: 'medium.jpg',
+  large: 'large.jpg',
   thumbnail: 'thumbnail.jpg',
 };
 
@@ -19,6 +19,6 @@ test('renders Avatar component', () => {
   const imageElement = screen.getByAltText(`${mockName.first} ${mockName.last}`);
   expect(imageElement).toBeInTheDocument();
 
-  const expectedSource = mockImage.medium;
+  const expectedSource = mockImage.large;
   expect(imageElement).toHaveAttribute('src', expectedSource);
 });

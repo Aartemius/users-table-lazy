@@ -4,7 +4,7 @@ export interface UserName {
 }
 
 export interface UserImage {
-  medium: string;
+  large: string;
   thumbnail: string;
 }
 
