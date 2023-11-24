@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react';
 import { User } from '../types/user';
 
 export interface UsersResponseData {
-  info: {
-    page: number;
-    results: number;
-    seed: string;
-    version: string;
-  }
+  info: object;
   results: User[];
 }
 
