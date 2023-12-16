@@ -13,8 +13,7 @@ const UserCardsContainer = () => {
 
   const handleScroll = () => {
     const isScrolledToBottom = (
-      Math.round(window.innerHeight + document.documentElement.scrollTop) === 
-      document.documentElement.offsetHeight
+      (document.documentElement.offsetHeight - Math.round(window.innerHeight + document.documentElement.scrollTop)) < 10
     );
 
     if (isScrolledToBottom && !isFetching) {
